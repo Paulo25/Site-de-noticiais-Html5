@@ -1,0 +1,19 @@
+@charset "UTF-8"
+
+/*CONFIGURAÇÕES DOS OBJETOS QUE ESTÃO NO ARQUIVO ESPEC.html*/
+
+section#conteudo{ /*configurando a segunda section*/
+	width: 1000px; /*largura*/
+	margin: auto; /*margens automaticas, o conteudo irá ficar centralizado na tela independente do espaço*/
+}
+
+iframe#frame-spec{/*configurações do tamanho do frame*/
+	width: 420px; /*largura*/
+	height: 280px;	/*altura*/
+	border: none; /*remove a borda*/
+	/*overflow: hidden; remover a visualização do conteudo*/
+}
+/*remove a barra de rolagem do Iframe
+iframe#frame-spec::-webkit-scrollbar {
+	display: none; /*tira a exibição
+}*/

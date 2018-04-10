@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script>
+	function acendeLampada(){ /*função em js para disparar um evento*/
+		//alert("Lampada acendeu");
+		document.getElementById("luz").src="_imagens/lampada-acesa.jpg"; /*evento que manipula objeto atravez do Id e altera imagem com src*/
+	}
+	function apagaLampada(){
+		document.getElementById("luz").src="_imagens/lampada-apagada.jpg";
+	}
+	function quebraLampada(){
+		document.getElementById("luz").src="_imagens/lampada-quebrada.jpg";
+	}
+	</script>
+</head>
+<body>
+	<h1>Acenda a lâmpada</h1>
+	<img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()"/>
+</body>
+</html> 

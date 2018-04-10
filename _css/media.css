@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*Configuração da Div de audio e video*/
+div#tv-radio{
+	width: 900px;
+	height: 580px;
+	margin: auto; /*para ficar centralizado dentro da div*/
+	background: url("../_imagens/radio-tv.png")no-repeat; /*imagem com função para não repetir*/
+}
+/*manipulação do audio para colocar dentro da imagem(backgroundUrl)*/
+audio#musica{
+	display: block; /*exbir em bloco*/
+	position: relative; /*flutuar em qual quer area do site*/
+	left: 575px;	/*para direita*/
+	top: 500px;
+	width: 300px;
+}
+/*manipulação do video para colocar dentro da imagem(backgroundUrl)*/
+video#filme{
+	display: block;
+	position: relative; /*flutuar dentro do conteiner*/
+	left: 90px;
+	top: 84px;
+	width: 440px;
+}

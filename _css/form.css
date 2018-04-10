@@ -1,0 +1,46 @@
+/*para não ter problemas eventuas com acentuações*/
+@charset "UTF-8"; 
+
+/*Formatação do formulário inteiro*/
+form{
+	width: 500px; /*largura*/
+	margin: auto; /*margem automatica para o formulario ficar no centro da pagina*/
+}
+/*Formatação de todos input(objetos)*/
+input, textarea{
+	font-family: sans-serif; /*fonte sem serifa*/
+	font-weight: normal; /*fonte sem o negrito*/
+	font-size: 13pt; /*tamanho da fonte*/
+	background-color: rgba(255,255,255,.8); /*branco com transparência nos objetos*/
+}
+input:hover,textarea:hover{ /*efeito de ao passar o mouse em qualquer objeto*/
+	background-color: #dddddd;/*fundo cinza*/
+}
+/*Formatação de todas as legendas do fieldset*/
+legend{
+	color: #888888; /*cinza escuro*/
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: sans-serif;
+}
+/*Formatação de todos as  arear filedset que forma um conteiner*/
+fieldset{
+	border-color: #cecece; /*cinza mais claro*/
+	margin: 20px; 
+}
+fieldset#sexo{/*formatação apenas do fieldset sexo*/
+	width:150px;
+}
+/*colocar imagens de fundo em todos os fieldset com seu Id*/
+fieldset#usuario{
+	background:url("../_imagens/icone-contato.png")no-repeat 95% 95%;
+}
+fieldset#endereco{
+	background:url("../_imagens/icone-endereco.png")no-repeat 95% 95%;
+}
+fieldset#mensagem{
+	background:url("../_imagens/icone-mensagem.png")no-repeat 95% 95%;
+}
+fieldset#pagamento{
+	background:url("../_imagens/icone-pagamento.png")no-repeat 95% 95%;
+}

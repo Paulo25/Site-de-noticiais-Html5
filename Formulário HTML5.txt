@@ -1,0 +1,58 @@
+Curso de HTML5 - 33 - Formulários em HTML5 (parte 1)
+Veja como criar formulários em HTML e conheça as tags novas para formulários no HTML5, como os tipos NUMBER, DATE e EMAIL. Essa será a primeira parte de três tutoriais sobre formulários HTML5.
+
+A tag FORM serve para criar um formulário, onde o usuário vai poder interagir com seu site e fornecer dados. 
+
+A tag FIELDSET em HTML cria conjuntos de campos agrupados dentro de uma linha container que vai identificar cada uma das sessões. 
+
+A tag LEGEND cria uma legenda para cada FIELDSET, um texto que fica sobre as linhas.
+
+A tag INPUT serve para criar a grande maioria dos campos de formulários em HTML5. Nessa aula, veremos alguns valores para o parâmetro TYPE:
+
+A tag INPUT com o parâmetro TYPE = "text" cria uma caixa de texto.
+
+O parâmetro SIZE indica a quantidade de caracteres exibidos simultaneamente em uma caixa de texto.
+
+O parâmetro MAXLENGTH indica a quantidade de caracteres aceitos em uma caixa de texto.
+
+Entenda a diferença entre SIZE e MAXLENGTH.
+
+O parâmetro PLACEHOLDER configura um conteúdo informativo dentro de um objeto de formulário. Ao clicar sobre o objeto, o PLACEHOLDER desaparecerá.
+
+Para criar uma caixa de senha em um formulário HTML, utilizaremos a tag INPUT com TYPE = "password"
+
+Caixas de senha também suportam SIZE, MAXLENGTH e PLACEHOLDER.
+
+Para solicitar um e-mail. utilizaremos INPUT com TYPE = "email", que é exclusivo da HTML5.
+
+Para criar opções a serem selecionadas na forma de botões de rádio, utilizaremos INPUT com parâmetro TYPE = "radio". Para deixar uma opção previamente marcada, utilizamos o parâmetro CHECKED.
+
+OBS: Para objetos do tipo RADIO que fazem parte de um mesmo grupo, todos devem ter o mesmo NAME. Isso é muito importante.
+
+Para criar palavras relacionadas a objetos de formulário, utilizamos a tag LABEL com um ID. Para criar a relação entre objetos e LABEL, utilizamos o parâmetro FOR do objeto.
+
+A tag INPUT com parâmetro TYPE = "date", cria uma caixa de seleção de data, com um calendário (depende do navegador utilizado).
+
+Para permitir a entrada de valores numéricos, utilizamos INPUT com parâmetro TYPE="number". Nesse caso, os parâmetros MIN e MAX definem os valores mínimo e máximo para caixas desse tipo.
+
+
+AULA 34 (PARTE 2) - Formulários em HTML5 (parte 2)
+
+A aula de formulários em HTML5 tem continuidade com alguns objetos e propriedades novos. 
+
+Para a tag FORM, o parâmetro METHOD aceita os valores GET e POST:
+
+- O método GET envia dados via URL (endereço do site). É um método mais rápido e menos seguro.
+- O método POST envia dados por pacotes. É um método um pouco mais lento, mas possui uma segurança maior.
+
+O parâmetro ACTION indica o local para onde os dados serão enviados. Quem utiliza a clausula MAILTO, deve ter um cliente de e-mail previamente configurado.
+
+A tag SELECT cria caixas combinadas, utilizando a tag OPTION para criar as opções.
+
+O parâmetro SELECTED serve para tornar um OPTION padrão. Os valores podem ser definidos com o parâmetro VALUE.
+
+A tag DATALIST serve para criar uma lista de dados dentro de um campo incluindo as opções com a tag OPTION e seus valores com o parametro VALUE que referência um valor para o BD.
+ 
+Parâmetro Type da tag input "range" cria um objeto de slide deslizador podendo colocar Min/Max e a quantida de step.
+
+tag TEXTAREA cria uma caixa de texto maior e podendo ser configrada com os parametros definindo a quantidade de colucanas - cols e linhas - rows 

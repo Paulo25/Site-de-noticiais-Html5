@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+/*FOMATAÇÃO DA LSITA QUE SERÁ TRANSFORMADA EM FOTOS*/
+
+ul#album-fotos{/*configuração da ul(lista inteira)*/
+width: 700px; /*largura*/
+margin: 0 auto;	/*margem esquerda 0 e automatica para o resto dos lados*/
+padding: 50px; /*amplia espaço interno, borda fica maior*/
+overflow: hidden; /*remove efeitos*/
+list-style: none; /*tira os marcadores da lista*/
+}
+ul#album-fotos li{ /*configuração dos itens da lista*/
+float: left; /*itens um do lado do outro*/
+width: 200px; /*largura*/
+height: 200px; /*altura*/
+margin: 10px; /*margem fora de cada caixa*/
+border: 5px solid #ffffff; /*borda branca*/
+background-color: #ffffff;/*fundo branco*/
+box-shadow: 1px 1px 3px rgba(0,0,0,.4); /*sombra*/
+-webkit-transition: all .4s ease-in;/*todas, segundo, forma de efeito ->amplia de img de maneira suave*/
+}
+ul#album-fotos li:hover{ /*ao passar o mouse na imagem*/
+-webkit-transform:scale(1.5); /*amplia a imagem de maneira brutal*/
+}
+
+/*foto será inserida dentro da área criada*/
+ul#album-fotos li#foto01{/*configurado o li com identificador foto01*/
+background: url('../_imagens/galeria-01.jpg')no-repeat; /*fundo com imagen e configurada pra não se repetir*/
+background-position: 50% 50%; /*muda o posicionamento da imagem vertical, lateral*/
+/*OBS:a imagen estar no meio é importante pois o zoom parte incialmente do meio*/
+background-size: 400px 400px; /*tamanho original da imagem de fundo*/
+background-color: #ffffff; /*refirma o fundo para branco*/
+}
+/*Efeito de zoom out - reduz a imagen*/
+ul#album-fotos li#foto01:hover{/*ao passa o mouse sobre a 1º imagem*/
+	background-position: 0px 0px; /*volta a mostra a parte de cima da tela*/
+	background-size: 200px 200px; /*volta para o tamnho normal da imagem*/
+
+}
+
+ul#album-fotos li#foto02{/*configurado o li com identificador foto02*/
+background: url('../_imagens/galeria-02.jpg')no-repeat; /*fundo com imagen e configurada pra não se repetir*/
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: #ffffff;
+}
+ul#album-fotos li#foto02:hover{
+	background-position: 0px 0px; 
+	background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto03{/*configurado o li com identificador foto03*/
+background: url('../_imagens/galeria-03.jpg')no-repeat; /*fundo com imagen e configurada pra não se repetir*/
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: #ffffff;
+}
+ul#album-fotos li#foto03:hover{
+	background-position: 0px 0px; 
+	background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto04{/*configurado o li com identificador foto04*/
+background: url('../_imagens/galeria-04.jpg')no-repeat; /*fundo com imagen e configurada pra não se repetir*/
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: #ffffff;
+}
+ul#album-fotos li#foto04:hover{
+	background-position: 0px 0px; 
+	background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto05{/*configurado o li com identificador foto05*/
+background: url('../_imagens/galeria-05.jpg')no-repeat; /*fundo com imagen e configurada pra não se repetir*/
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: #ffffff;
+}
+ul#album-fotos li#foto05:hover{
+	background-position: 0px 0px; 
+	background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto06{/*configurado o li com identificador foto06*/
+background: url('../_imagens/galeria-06.jpg')no-repeat; /*fundo com imagen e configurada pra não se repetir*/
+background-position: 50% 50%;
+background-size: 400px 400px;
+background-color: #ffffff;
+}
+ul#album-fotos li#foto06:hover{
+	background-position: 0px 0px; 
+	background-size: 200px 200px;
+}
+
+ul#album-fotos li span{ /*configuração dos itens da lista entre a tag span*/
+	opacity: 0;	/*remove o nome teporariamente*/
+	color: #ffffff; /*letra cor branca*/
+	text-shadow: 1px 1px 1px #000000; /*legenda com uma leve sombra preta*/
+	background-color: rgba(0,0,0,.3); /*fundo preto com trânsparencia*/
+	font-size: 9pt; /*tamanho da letra*/
+	line-height: 370px; /*legenda desloca para baixo*/
+	padding: 5px; /*aumenta a largura do fundo*/
+}
+ul#album-fotos li:hover span{ /*ao passar o mouse 	por cima do (li) o span aparece*/
+opacity: 1;
+}
